@@ -1,65 +1,59 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @mixin config-area() {
-  background-color: #c0d8d8;
-  border: 1px solid #1d2f2f;
-  box-shadow: 1px 1px 10px 2px #3a5f5f;
-  border-top: none;
+    background-color: #c0d8d8;
+    border: 1px solid #1d2f2f;
+    box-shadow: 1px 1px 10px 2px #3a5f5f;
+    border-top: none;
 }
 
-// html {
-//   height: 100%;
-// }
-
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-  background: #87b5b5;
-  height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background: #87b5b5;
+    height: 100%;
 }
 
 #editor-box {
-  max-width: 800px;
-  margin: 1.25rem auto;
+    max-width: 800px;
+    margin: 1.25rem auto;
 }
 
 #toolbar {
-  display: flex;
-  justify-content: space-between;
-  background-color: #4aa3a3;
-  padding: 0.3rem;
-  border: 1px solid #1d2f2f;
-  box-shadow: 1px 1px 10px 2px #3a5f5f;
-  font-family: Russo One;
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: black;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4aa3a3;
+    padding: 0.3rem;
+    border: 1px solid #1d2f2f;
+    box-shadow: 1px 1px 10px 2px #3a5f5f;
+    font-family: Russo One;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
 }
 
 #editor-box #editor {
-  @include config-area();
-  width: 100%;
-  height: 350px;
-  min-height: 350px;
-  max-height: 550px;
-  margin-bottom: -5px;
-  resize: vertical;
-  outline: none;
-  padding-left: 5px;
-  padding-top: 5px;
-  font-size: 0.875rem;
+    @include config-area();
+    width: 100%;
+    height: 30vh;
+    resize: none;
+    margin-bottom: -5px;
+    outline: none;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 0.875rem;
 }
 
 #preview {
-  @include config-area();
-  max-width: 1000px;
-  margin: 1.25rem auto;
-  min-height: 200px;
-  height: 70vh;
-  overflow-wrap: break-word;
+    @include config-area();
+    max-width: 1000px;
+    margin: 1.25rem auto;
+    min-height: 200px;
+    height: 62vh;
+    overflow-wrap: break-word;
 }

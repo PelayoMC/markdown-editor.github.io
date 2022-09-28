@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/random-quotes.github.io/static/css/main.40cba443.css",
-    "main.js": "/random-quotes.github.io/static/js/main.ed60b46a.js",
-    "static/js/787.50388383.chunk.js": "/random-quotes.github.io/static/js/787.50388383.chunk.js",
-    "index.html": "/random-quotes.github.io/index.html",
-    "main.40cba443.css.map": "/random-quotes.github.io/static/css/main.40cba443.css.map",
-    "main.ed60b46a.js.map": "/random-quotes.github.io/static/js/main.ed60b46a.js.map",
-    "787.50388383.chunk.js.map": "/random-quotes.github.io/static/js/787.50388383.chunk.js.map"
+    "main.css": "/markdown-editor.github.io/static/css/main.40cba443.css",
+    "main.js": "/markdown-editor.github.io/static/js/main.45e1349a.js",
+    "static/js/787.50388383.chunk.js": "/markdown-editor.github.io/static/js/787.50388383.chunk.js",
+    "index.html": "/markdown-editor.github.io/index.html",
+    "main.40cba443.css.map": "/markdown-editor.github.io/static/css/main.40cba443.css.map",
+    "main.45e1349a.js.map": "/markdown-editor.github.io/static/js/main.45e1349a.js.map",
+    "787.50388383.chunk.js.map": "/markdown-editor.github.io/static/js/787.50388383.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.40cba443.css",
-    "static/js/main.ed60b46a.js"
+    "static/js/main.45e1349a.js"
   ]
 }

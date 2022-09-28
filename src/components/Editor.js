@@ -1,28 +1,44 @@
 import { useDispatch, useSelector } from "react-redux";
 import { changeMessage, selectMessage } from "../redux/markdown/slice";
+import {
+    changeVisibilityPreviewer,
+    selectEditorVisibility,
+    selectPreviewerVisibility,
+} from "../redux/visibility/slice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMaximize } from "@fortawesome/free-solid-svg-icons";
+import { faMaximize, faMinimize } from "@fortawesome/free-solid-svg-icons";
 import { faFreeCodeCamp } from "@fortawesome/free-brands-svg-icons";
 
 const Editor = () => {
     const dispatch = useDispatch();
 
     const updateText = (evt) => {
-        console.log(evt.target.value);
         dispatch(changeMessage(evt.target.value));
     };
 
+    const updateVisibility = (evt) => {
+        dispatch(changeVisibilityPreviewer());
+    };
+    let visible = useSelector(selectPreviewerVisibility);
+
     return (
-        <div id="editor-box">
+        <div id="editor-box" hidden={!useSelector(selectEditorVisibility)}>
             <div id="toolbar">
                 <span>
                     <FontAwesomeIcon icon={faFreeCodeCamp} />
-                    <span className="ps-2">EDITOR</span>
+                    <span className="ps-2">Editor</span>
                 </span>
-                <FontAwesomeIcon icon={faMaximize} style={{ margin: 5 }} />
+                <FontAwesomeIcon
+                    icon={visible ? faMaximize : faMinimize}
+                    style={{ margin: 5 }}
+                    onClick={updateVisibility}
+                />
             </div>
             <textarea
                 id="editor"
+                style={{
+                    minHeight: visible ? "30vh" : "90vh",
+                }}
                 defaultValue={useSelector(selectMessage)}
                 onChange={updateText}
             ></textarea>

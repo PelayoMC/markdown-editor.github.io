@@ -15,20 +15,20 @@ function anotherExample(firstLine, lastLine) {
 }
 \`\`\`
 
-You can also make text **bold**... whoa!
-Or _italic_.
-Or... wait for it... **_both!_**
-And feel free to go crazy ~~crossing stuff out~~.
+You can also make text **bold**... whoa!\n
+Or _italic_.\n
+Or... wait for it... **_both!_**\n
+And feel free to go crazy ~~crossing stuff out~~.\n
 
 There's also [links](https://www.freecodecamp.org), and
 > Block Quotes!
 
 And if you want to get really crazy, even tables:
 
-Wild Header | Crazy Header | Another Header?
------------- | ------------- | -------------
-Your content can | be here, and it | can be here....
-And here. | Okay. | I think we get it.
+| Wild Header | Crazy Header | Another Header? |
+| ------------ | ------------- | ------------- |
+| Your content can | be here, and it | can be here.... |
+| And here. | Okay. | I think we get it. |
 
 - And of course there are lists.
   - Some are bulleted.

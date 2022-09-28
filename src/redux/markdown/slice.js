@@ -17,7 +17,7 @@ export const markdownSlice = createSlice({
 
 export const { changeMessage } = markdownSlice.actions;
 export const selectMessage = (state) => {
-    console.log(state);
+    console.log("message", state);
     return state.markdown.message;
 };
 export default markdownSlice.reducer;
